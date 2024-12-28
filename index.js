@@ -10,7 +10,7 @@ app.get('/', (req, res) =>{
 app.get('/login', (req, res) => {
     res.send('<h1> Please Login </h1>')
 })
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Example app listing or port ${port}`);
     
 })
