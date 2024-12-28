@@ -10,5 +10,8 @@
     "node"
   ],
   "author": "najeeb ahmed",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
