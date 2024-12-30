@@ -34,6 +34,7 @@ app.get('/jokes', (req, res) => {
             content: 'This is a fifth joke'
         }
     ];
+    res.send(jokes);
 });
 
 const port = process.env.PORT || 3000;
