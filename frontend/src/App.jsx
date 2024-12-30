@@ -10,6 +10,12 @@ const [jokes, setJokes] = useState([]);
 
 useEffect(() => {
   axios.get('http://localhost:3000/jokes')
+  .then((response) => {
+    setJokes(response.data)
+  })
+  .catch((error) => {
+    console.error(error);
+  })
 })
 
   return (
